@@ -16,6 +16,9 @@ services:
       DATABASE_URL: postgresql://postgres:postgres@db:5432/iasite
       SECRET_KEY: change-me
       BACKEND_CORS_ORIGINS: '["http://localhost:5173"]'
+      AI_PROVIDER: local
+      AI_MODEL: gpt-4o-mini
+      OPENAI_API_KEY: ""
     ports:
       - "8000:8000"
     depends_on:

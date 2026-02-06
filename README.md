@@ -15,6 +15,7 @@ Plateforme full-stack pour générer, gérer et administrer des projets web à p
 - CRUD projets avec recherche + pagination
 - Dashboard admin (stats, gestion utilisateurs, logs)
 - Upload d'images en local (dev)
+- Générateur IA (templates + prompting + génération de scaffolds)
 
 ## Architecture
 ```
@@ -72,3 +73,12 @@ docker compose up --build
 - `GET /api/v1/projects?query=...`
 - `POST /api/v1/projects`
 - `GET /api/v1/admin/stats`
+- `POST /api/v1/ai/generate`
+
+## Génération IA
+Le moteur IA combine des templates locaux et, si configuré, un modèle OpenAI pour produire un résumé et des fichiers prêts à l'emploi.
+
+Variables nécessaires :
+- `AI_PROVIDER=local` ou `openai`
+- `AI_MODEL=gpt-4o-mini`
+- `OPENAI_API_KEY` (si provider OpenAI)

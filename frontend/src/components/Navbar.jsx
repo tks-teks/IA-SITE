@@ -7,6 +7,7 @@ const Navbar = () => (
       <div className="flex items-center gap-4 text-sm">
         <Link to="/about" className="text-slate-300 hover:text-white">About</Link>
         <Link to="/contact" className="text-slate-300 hover:text-white">Contact</Link>
+        <Link to="/generator" className="text-slate-300 hover:text-white">Générateur</Link>
         <Link to="/login" className="rounded-md border border-slate-700 px-3 py-2 text-slate-200">Login</Link>
         <Link to="/register" className="btn">Register</Link>
       </div>

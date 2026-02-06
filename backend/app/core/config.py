@@ -14,6 +14,10 @@ class Settings(BaseSettings):
     FRONTEND_URL: str = "http://localhost:5173"
     RATE_LIMIT_LOGIN: str = "5/minute"
     UPLOAD_DIR: str = "./uploads"
+    AI_PROVIDER: str = "local"
+    AI_MODEL: str = "gpt-4o-mini"
+    OPENAI_API_KEY: str = ""
+    GENERATED_DIR: str = "./generated"
 
     class Config:
         env_file = ".env"

@@ -6,6 +6,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Generator from './pages/Generator'
 import Dashboard from './pages/Dashboard'
 import Projects from './pages/Projects'
 import Admin from './pages/Admin'
@@ -20,6 +21,7 @@ const App = () => (
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/generator" element={<Generator />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/dashboard/projects" element={<Projects />} />
         <Route path="/admin" element={<Admin />} />
